@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background: url(./images/bg-mobile.svg) no-repeat var(--violet);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  padding: 38px 36px;
+}
+
+.container {
+  max-width: 375px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  margin: 50px 0 16px 0;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+.logo {
+  width: 120px;
+  margin-bottom: 50px;
+}
+
+.mockup {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  margin-top: 24px;
+  margin-bottom: 52px;
+
+  background: #FFFFFF;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  border: none;
+  border-radius: 20px;
+
+  color: var(--violet);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+}
+
+button:hover, button:active {
+  color: #fff;
+  background: var(--soft-magenta);
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  border-radius: 28px;
+}
+
+
+
+
+
+.social-links {
+  /* margin-bottom: 25px; */
+}
+
+.social-links a:hover, .social-links a:focus {
+  animation-name: socialAnimation;
+  animation-duration: 0.4s;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
+}
+
+.social-links li {
+	margin: 10px;
+}
+
+.social-links li a {
+	border: 1px solid hsl(0, 7%, 89%);
+	border-radius: 50%;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12.6px;
+	height: 28px;
+	width: 28px;
+	text-decoration: none;
+}
+
+.social-links li a:hover, .social-links a:focus {
+	border-color: var(--soft-magenta);
+	color: var(--soft-magenta);
+}
+
+@keyframes socialAnimation {
+  0% {
+    scale: 1.0;
+    font-size: 1px;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1.0;
+    background: var(--soft-magenta);
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+footer {
+  display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
